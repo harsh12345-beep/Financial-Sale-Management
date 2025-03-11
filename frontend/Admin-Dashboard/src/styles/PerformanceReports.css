@@ -1,0 +1,106 @@
+.brand {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.nav-item {
+    padding: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.nav-item:hover, .nav-item.active {
+    background: #333;
+    border-radius: 5px;
+}
+
+/* Main Content */
+.main-content {
+    /* margin-left: 16%; */
+    padding: 20px;
+    background: #f8f9fa;
+    min-height: 100vh;
+    min-width: 100%;
+    transition: margin-left 0.3s ease;
+}
+
+.content-wrapper {
+    max-width: 100%;
+    margin: auto;
+}
+
+/* Filters */
+.filter-container {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+/* Summary Cards */
+.summary-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.summary-card {
+    width: 180px;
+    padding: 15px;
+    background: #007bff;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Table */
+.performance-table th {
+    background: #007bff;
+    color: white;
+    text-align: center;
+}
+
+.performance-table td {
+    text-align: center;
+}
+
+/* Buttons */
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .sidebar {
+        width: 20%;
+    }
+    .main-content {
+        margin-left: 22%;
+    }
+}
+
+@media (max-width: 768px) {
+    /* .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+        padding: 10px;
+    } */
+    /* .main-content {
+        margin-left: 0;
+    } */
+    .summary-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}

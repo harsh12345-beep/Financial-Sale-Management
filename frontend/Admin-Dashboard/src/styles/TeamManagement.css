@@ -1,0 +1,147 @@
+/* Team Management Dashboard */
+.team-dashboard-container {
+    background-color: #ffffff; /* White background */
+    min-height: 100vh;
+    
+    padding: 20px;
+    width: 200%;
+    color: #121829; /* Dark navy for text */
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Navbar Styling */
+.dashboard-navbar {
+    background-color: #121829; /* Dark navy for a professional look */
+    padding: 15px 20px;
+    display: flex;
+    width: 83%;
+    border-radius: 10px;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-navbar .navbar-brand {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.search-bar {
+    max-width: 250px;
+}
+
+.search-bar input {
+    background: #ffffff;
+    color: #121829;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 6px;
+}
+
+.search-bar input::placeholder {
+    color: #666;
+}
+
+.search-bar .input-group-text {
+    background: #4a90e2;
+    border: none;
+    color: white;
+}
+
+/* Add Manager Button */
+.add-manager-btn {
+    background-color: #007bff;
+    border: none;
+    color: white;
+    padding: 8px 15px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.add-manager-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Content Area */
+.content-area {
+    padding: 20px;
+}
+
+/* Statistic Cards */
+.stat-card {
+    background-color: #f8f9fa; /* Light gray to stand out */
+    color: #121829;
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Chart Card */
+.chart-card {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.chart-title {
+    font-weight: bold;
+    color: #4a90e2;
+}
+
+/* Table Styling */
+.table {
+    background-color: #ffffff;
+    color: #121829;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.table th {
+    background-color: #121829;
+    color: white;
+}
+
+.table tbody tr:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.table td {
+    color: #333;
+}
+
+/* Responsive Styles for Mobile View */
+@media screen and (max-width: 768px) {
+    /* Adjust sidebar width is defined in your sidebar CSS; ensure the content aligns with it */
+    .dashboard-container {
+        margin-left: 60px; /* Updated to match collapsed sidebar width */
+        padding: 15px;
+    }
+    
+    .dashboard-navbar {
+        width: calc(100% - 60px); /* Adjust width based on sidebar width */
+        padding: 10px 15px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .search-bar {
+        max-width: 150px;
+    }
+    
+    .chart-card, .stat-card {
+        padding: 15px;
+    }
+    
+    .stat-card {
+        font-size: 14px;
+    }
+    
+    .table {
+        font-size: 14px;
+    }
+}

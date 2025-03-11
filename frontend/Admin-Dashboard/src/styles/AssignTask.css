@@ -1,0 +1,119 @@
+.assign-main-content {
+  flex: 1;
+  padding: 20px;
+  background: white;
+  min-height: 100vh;
+  width: 100%;
+  /* margin-left: 240px; */
+}
+
+/* Header Section */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.search-box {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.add-btn {
+  background: blue;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Assign Targets Section */
+.assign-targets h2 {
+  margin: 0;
+}
+
+.stats {
+  display: flex;
+  gap: 15px;
+  margin: 15px 0;
+}
+
+.stat-box {
+  flex: 1;
+  background: #e3f2fd;
+  padding: 15px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+/* Table Styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 20px;
+  text-align: center;
+}
+
+th {
+  background: #007BFF;
+  color: white;
+}
+
+.status {
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: white;
+}
+
+.status.met {
+  background: green;
+}
+
+.status.behind {
+  background: red;
+}
+
+.status.pending {
+  background: orange;
+}
+
+/* Responsive Styles for Assign Task Page (max-width: 768px) */
+@media screen and (max-width: 768px) {
+  
+
+  .header {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+  }
+
+  .search-box {
+      width: 100%;
+  }
+
+  .stats {
+      flex-direction: column;
+  }
+
+  .stat-box {
+      margin-bottom: 10px;
+  }
+
+  /* Allow horizontal scrolling for wide tables */
+  table {
+      display: block;
+      overflow-x: auto;
+  }
+
+  th, td {
+      padding: 10px;
+      font-size: 14px;
+  }
+}

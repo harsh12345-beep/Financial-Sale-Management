@@ -1,0 +1,102 @@
+.admin-container {
+    background-color: #f8f9fa;
+    min-height: 100vh;
+    padding: 20px;
+    margin-left: 320px; /* Adjust this based on your sidebar width */
+    width: calc(100% - 220px); /* Ensures it doesn't overflow */
+    transition: all 0.3s ease-in-out;
+}
+
+.admin-header {
+    background-color: #ffffff;
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.admin-header h5 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.admin-search {
+    border-radius: 5px;
+    padding: 8px;
+}
+
+.admin-statistics {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.admin-card {
+    background-color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.admin-chart-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.admin-dropdown {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.admin-filter-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.admin-export-btn {
+    background-color: #6c757d;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.admin-export-btn:hover {
+    background-color: #5a6268;
+}
+
+.admin-filter-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .admin-container {
+        margin-left: 0; /* Makes it full width when sidebar collapses */
+        width: 100%;
+    }
+
+    .admin-statistics {
+        flex-direction: column;
+    }
+
+    .admin-dropdown,
+    .admin-filter-btn,
+    .admin-export-btn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
